@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/c28f852b63.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hedvig+Letters+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav style="background-color: black; height: 150px ;">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container" style="padding-top: 35px;">
+                <!-- logo -->
+                <a class="navbar-brand fs-4" style="color: white;font-family: Kanit, sans-serif;" href="index.html"><i
+                        class="fa-solid fa-globe"></i>Astronomy</a>
+                <!-- Toggle btn -->
+                <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" style="background-color: black;" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" style="font-family: Kanit, sans-serif;" id="offcanvasNavbarLabel"
+                            href="page2.html"><i class="fa-solid fa-globe"></i>Astronomy
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" style="color: white;font-family: Kanit, sans-serif;"
+                                    aria-current="page" href="index.html">News</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="page1.html">Space Exploration</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="magzine.html">The Magzine </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="contact.html">Contact Us </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="askastro.html">Ask Astro</a>
+                            </li>
+                        </ul>
+                        <!-- login & signup -->
+                        <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn text-white text-decoration-underline"
+                                style="font-family: Kanit, sans-serif;" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                Login
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content text-white" style="background-color: black;">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" style="font-family: Kanit, sans-serif;"
+                                                id="exampleModalLabel">Login</h1>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Username&Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="ForgetPassword4" class="form-label mx-auto"><a
+                                                            href="#">Forget Password</a></label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputPassword4" class="form-label">Don't have an
+                                                        Account?<a href="">Signup</a></label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" style="font-family: Kanit, sans-serif;"
+                                class="btn btn-success px-3 py-1 text-decoration-none rounded-4" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                SignUp
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content text-white" style="background-color: black;">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel"
+                                                style="font-family: Kanit, sans-serif;">SignUp</h1>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-9">
+                                                    <label for="inputEmail4" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label">Age</label>
+                                                    <input type="number" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Username&Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="Confirm Password" class="form-label">Confirm
+                                                        Password</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress2" class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Apartment, studio, or floor">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input type="number" class="form-control" id="inputZip">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputState" class="form-label">Country</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Pakistan</option>
+                                                        <option>India</option>
+                                                        <option>Iran</option>
+                                                        <option>Afghanistan</option>
+                                                        <option>China</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Education</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Terms and Conditions..
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="submit" class="btn btn-success">Continue with
+                                                        Facebook</button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="submit" class="btn btn-outline-success">Continue with
+                                                        Google</button>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Signup</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pictures/0.jpg" style="width: 1520px; height: 700px;" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 style="font-family: Kanit, sans-serif; font-weight: 400;">Space Exploration</h2>
+                        <p style="font-family: Kanit, sans-serif; font-weight: 500;">Get the latest news on both human
+                            and robotic missions that are helping humanity explore our
+                            solar system and beyond.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/11.jpg" style="width: 1520px; height: 700px;" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 style="font-family: Kanit, sans-serif; font-weight: 400;">Space Exploration</h2>
+                        <p style="font-family: Kanit, sans-serif; font-weight: 500;">Get the latest news on both human
+                            and robotic missions that are helping humanity explore our
+                            solar system and beyond.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="pictures/3.jpg" style="width: 1520px; height: 700px;" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 style="font-family: Kanit, sans-serif; font-weight: 400;">Space Exploration</h2>
+                        <p style="font-family: Kanit, sans-serif; font-weight: 500;">Get the latest news on both human
+                            and robotic missions that are helping humanity explore our
+                            solar system and beyond.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="display-4 text-center mt-5" style="font-family: Kanit, sans-serif;">Blackhole</h2>
+        <div class="container text-center pt-5">
+            <div class="row row-cols-md-2 row-cols-lg-4 g-2">
+                <div class="col mx-auto">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Blackhole</h5>
+                            <p class="card-text">Black holes are mysterious and fascinating objects in astrophysics,
+                                predicted by the theory of general relativity.At the center of a black hole, there is a
+                                point of infinite density called a singularity. The laws of physics, as we currently
+                                understand them, break down at this point.</p>
+                            <a href="https://en.wikipedia.org/wiki/Black_hole"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b1.jpg" style="height: 230px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Steller Blackhole</h5>
+                            <p class="card-text">Stellar-mass black holes are formed from massive stars undergoing
+                                gravitational collapse. When a massive star exhausts its nuclear fuel, the balance
+                                between the gravitational force pulling inward and the pressure from nuclear fusion
+                                pushing outward is disrupted, leading to collapse.</p>
+                            <a href="https://en.wikipedia.org/wiki/Stellar_black_hole"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b3.jpg" style="height: 253px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Intermediate Blackhole</h5>
+                            <p class="card-text">Intermediate black holes, if considered, would have masses larger than
+                                typical stellar-mass black holes (which can range from a few solar masses to about 20
+                                solar masses) but smaller than supermassive black holes (which can range from hundreds
+                                of thousands to billions of solar masses).</p>
+                            <a href="https://en.wikipedia.org/wiki/Intermediate-mass_black_hole"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b4.jpg" style="height: 253px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Supermassive Blackhole</h5>
+                            <p class="card-text">Supermassive black holes are extremely massive celestial objects found
+                                at the centers of most galaxies, including our own Milky Way.These
+                                have masses ranging from hundreds of thousands to billions of times that of the
+                                Sun.These are typically located at the centers of galaxies.</p>
+                            <a href="https://en.wikipedia.org/wiki/Supermassive_black_hole"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b5.jpg" style="height: 260px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Sagittarius(A)</h5>
+                            <p class="card-text">Sagittarius A* (pronounced "Sagittarius A-star") is a supermassive
+                                black hole located at the center of our Milky Way galaxy.Sagittarius A* is situated in
+                                the Sagittarius constellation, near the center of the Milky Way galaxy. It is
+                                approximately 26,000 light-years away from Earth.</p>
+                            <a href="https://en.wikipedia.org/wiki/Sagittarius_A*"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b6.jpg" style="height: 188px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Cygnus X-1</h5>
+                            <p class="card-text">Cygnus X-1 is a binary star system, consisting of two stars orbiting
+                                around a common center of mass.The secondary companion in Cygnus X-1 is thought to be a
+                                stellar-mass black hole.he mass of the black hole in Cygnus X-1 is estimated to be about
+                                14.8 times the mass of the Sun.This makes it one of the most massive stellar-mass black
+                                holes detected in a binary system.</p>
+                            <a href="https://en.wikipedia.org/wiki/Cygnus_X-1"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b7.jpg" style="height: 165px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">V404 Cygni</h5>
+                            <p class="card-text">V404 Cygni is a binary star system located in the constellation Cygnus,
+                                much like Cygnus X-1. It consists of a black hole and a companion star, which is likely
+                                a low-mass star or a red dwarf.The compact object in V404 Cygni is believed to be a
+                                stellar-mass black hole. This designation is based on observations of its behavior and
+                                characteristics, such as its mass, X-ray emissions, and variability.</p>
+                            <a href="https://en.wikipedia.org/wiki/V404_Cygni"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/b8.jpg" style="height: 235px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">M87's Blackhole</h5>
+                            <p class="card-text">The black hole at the center of the galaxy M87, known as M87*, is one
+                                of the most studied and famous black holes in the universe.M87*'s black hole is a
+                                supermassive black hole with a mass of approximately 6.5 billion times that of the Sun.
+                                M87 is located at a distance of about 55 million light-years from Earth.</p>
+                            <a href="https://en.wikipedia.org/wiki/Messier_87"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/7.jpg" style="height: 180px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Sun(soil)</h5>
+                            <p class="card-text">The Sun is a star, and "soil" typically refers to the top layer of the
+                                Earth's surface that supports plant life. The Sun is a G-type main-sequence star,
+                                commonly referred to as a G dwarf star or G2V star. It is classified as a yellow
+                                dwarf.The Sun is primarily composed of hydrogen (about 74% by mass) and helium (about
+                                24%). Other elements, such as oxygen, carbon, neon, and iron, make up the remaining 2%.
+                            </p>
+                            <a href="https://en.wikipedia.org/wiki/Soil"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/3.jpg" style="height: 180px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Sirius(alpha canis majoris)
+                            </h5>
+                            <p class="card-text"> Sirius is a binary star system consisting of two stars. The brighter
+                                component is Sirius A, which is a main-sequence star of spectral type A1V.Sirius is
+                                located at a distance of about 8.6 light-years from Earth. It is one of our closest
+                                neighboring stars.The orbital period of the binary system is about 50.1 years.surface
+                                temperature of around 9,940 degrees Celsius (17,964 degrees Fahrenheit).</p>
+                            <a href="https://en.wikipedia.org/wiki/Sirius"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/12.jpg" style="height: 227px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Alpha contauri</h5>
+                            <p class="card-text">Alpha Centauri is a triple star system located in the constellation of
+                                Centaurus, and it is the closest known star system to the Sun.Alpha Centauri consists of
+                                three stars: Alpha Centauri A, Alpha Centauri B, and Proxima Centauri. Alpha Centauri is
+                                the closest star system to the Sun, located at a distance of approximately 4.37
+                                light-years.</p>
+                            <a href="https://en.wikipedia.org/wiki/Alpha_Centauri"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-4" style="width: 16rem;">
+                        <img src="pictures/20.jpeg" style="height: 180px;" class="card-img-top" alt="...">
+                        <div class="card-body bg-black text-white">
+                            <h5 class="card-title" style="font-family: Kanit, sans-serif;">Betelgeuse (Alpha Orionis)
+                            </h5>
+                            <p class="card-text">Betelgeuse (Alpha Orionis) is a prominent and well-known red supergiant
+                                star located in the constellation Orion.Betelgeuse is a red supergiant star and is
+                                classified as a type M1-2 Ia-ab. It is one of the largest and most luminous stars
+                                visible to the naked eye. Betelgeuse is also one of the largest stars known, with a
+                                diameter estimated to be more than 1,000 times that of the Sun.</p>
+                            <a href="https://en.wikipedia.org/wiki/Betelgeuse"style="font-family: Kanit, sans-serif;"
+                                class="btn btn-outline-success border-0 text-white text-decoration-underline">More
+                                Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pt-5 justify-content-center">
+                <li class="page-item bg">
+                    <a class="page-link bg-black text-white" href="page1.html" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link bg-black text-white" href="page1.html">1</a></li>
+                <li class="page-item"><a class="page-link bg-black text-white" href="page2.html">2</a></li>
+                <li class="page-item"><a class="page-link bg-black text-white" href="page3.html">3</a></li>
+                <li class="page-item"><a class="page-link bg-black text-white" href="page4.html">4</a></li>
+                <li class="page-item">
+                    <a class="page-link bg-black text-white" href="page3.html" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer style="background-color: black; color: white;">
+        <div class="container">
+            <footer class="py-5 mt-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 style="font-family: Kanit, sans-serif;">Astronomy</h5>
+                        <ul class="nav flex-column" style="color: white;">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Space
+                                    Exporation</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">The Magzine</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Contact Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Ask Astro</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 style="font-family: Kanit, sans-serif;">Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-success" type="button" style="font-family: Kanit, sans-serif;">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p style="font-family: Kanit, sans-serif;">&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter fs-4"
+                                    style="color: white;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fs-4"
+                                    style="color: white;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fs-4"
+                                    style="color: white;"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

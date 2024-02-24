@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/c28f852b63.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Hedvig+Letters+Sans&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Contact Us</title>
+    <style>
+        .container-fluid{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="background-color: black; height: 150px ;">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container" style="padding-top: 35px;">
+                <!-- logo -->
+                <a class="navbar-brand fs-4" style="color: white;font-family: Kanit, sans-serif;" href="index.html"><i
+                        class="fa-solid fa-globe"></i>Astronomy</a>
+                <!-- Toggle btn -->
+                <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- sidebar -->
+                <div class="sidebar offcanvas offcanvas-start" style="background-color: black;" tabindex="-1"
+                    id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <!-- sidebar header -->
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: Kanit, sans-serif;"><i
+                                class="fa-solid fa-globe"></i>Astronomy
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <!-- sidebar body -->
+                    <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link active" style="color: white;font-family: Kanit, sans-serif;"
+                                    aria-current="page" href="index.html">News</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="page1.html">Space Exploration</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="magzine.html">The Magzine </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="contact.html">Contact Us </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" style="color: white;font-family: Kanit, sans-serif;"
+                                    href="askastro.html">Ask Astro</a>
+                            </li>
+                        </ul>
+                        <!-- login & signup -->
+                        <div class="d-flex flex-lg-row flex-column justify-content-center align-items-center gap-3">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn text-white text-decoration-underline"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                                style="font-family: Kanit, sans-serif;">
+                                Login
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content text-white" style="background-color: black;">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Username&Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="ForgetPassword4" class="form-label mx-auto"><a
+                                                            href="#">Forget Password</a></label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputPassword4" class="form-label">Don't have an
+                                                        Account?<a href="">Signup</a></label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Login</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-success px-3 py-1 text-decoration-none rounded-4"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                style="font-family: Kanit, sans-serif;">
+                                SignUp
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                    <div class="modal-content text-white" style="background-color: black;">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">SignUp</h1>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-9">
+                                                    <label for="inputEmail4" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="inputEmail4" class="form-label">Age</label>
+                                                    <input type="number" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Username&Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="Confirm Password" class="form-label">Confirm
+                                                        Password</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Confirm Password">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress2" class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Apartment, studio, or floor">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input type="number" class="form-control" id="inputZip">
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputState" class="form-label">Country</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Pakistan</option>
+                                                        <option>India</option>
+                                                        <option>Iran</option>
+                                                        <option>Afghanistan</option>
+                                                        <option>China</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Education</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Terms and Conditions..
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="submit" class="btn btn-success">Continue with
+                                                        Facebook</button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="submit" class="btn btn-outline-success">Continue with
+                                                        Google</button>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success">Signup</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <main>
+        <div class="head" style="background-color: darkcyan; height: 200px; display: flex;">
+            <h1 class="text-center mx-auto"
+                style="margin-top: 60px; font-size: 50px;font-family: Kanit, sans-serif; font-weight: 800;">Contact Us
+            </h1>
+        </div>
+        <br><br>
+        <div class="container-fluid">
+            <h1 class="text-center mx-auto mt-4" style="font-family: Kanit, sans-serif; font-weight: 300;">Let's Start a
+                Conversation</h1>
+            <br><br>
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" style="margin-left: 0px;">
+                        <h3 style="font-family: Kanit, sans-serif;">Ask how we can help you:</h3>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">See our platform in action</h5>
+                        <p>Request a personalized demo of TUNE's partner marketing platform.</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Master performance marketing</h5>
+                        <p>From TUNE Academy courses to industry research and insights,
+                            learn how <br> to grow your business through performance-based partnerships.</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Explore life at TUNE</h5>
+                        <p>Search open positions, read about company culture and <br> values,
+                            and explore our charitable initiatives.</p>
+                        <br><br>
+                        <h3 style="font-family: Kanit, sans-serif;">Points of Contact</h3>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">U.S. | TUNE</h5>
+                        <p>11350 McCormick Rd, EP III, Suite 200,
+                            Hunt Valley, MD 21031</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Billing Inquiries</h5>
+                        <p>(855) 979-7887</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Information and Sales</h5>
+                        <p>partnermarketing@tune.com</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Support</h5>
+                        <p>support@tune.com</p>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Verification of Employment</h5>
+                        <p>voe@constellationhbs.com</p>
+                        <br><br>
+                        <h3 style="font-family: Kanit, sans-serif;">Additional Office Locations</h3>
+                        <br>
+                        <h5 style="font-family: Kanit, sans-serif;">Germany</h5>
+                        <p>Torstr. 231, Vorderhaus, 1. OG, 10115 Berlin</p>
+
+                    </div>
+
+                    <div class="col-lg-6 mb-3">
+                        <p style="font-size: 22px;font-family: Kanit, sans-serif;">Please note: all fields are required.
+                        </p>
+
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <label for="inputEmail4" class="form-label">First Name</label>
+                                <input style="height: 50px; border: 1px solid black;" type="email" class="form-control"
+                                    id="inputEmail4">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputPassword4" class="form-label">Last Name</label>
+                                <input style="height: 50px; border: 1px solid black;" type="password"
+                                    class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Company Name:</label>
+                                <input style="height: 50px; border: 1px solid black;" type="text" class="form-control"
+                                    id="inputAddress">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress2" class="form-label">Company Email</label>
+                                <input style="height: 50px; border: 1px solid black;" type="text" class="form-control"
+                                    id="inputAddress2">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputCity" class="form-label">Job Title:</label>
+                                <input style="height: 50px; border: 1px solid black;" type="text" class="form-control"
+                                    id="inputCity">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputState" class="form-label">Country:</label>
+                                <select style="height: 50px; border: 1px solid black;" id="inputState"
+                                    class="form-select">
+                                    <option selected>Select</option>
+                                    <option>United States</option>
+                                    <option>Afghanistan</option>
+                                    <option>Åland Islands</option>
+                                    <option>Albania</option>
+                                    <option>Algeria</option>
+                                    <option>American Samoa</option>
+                                    <option>Andorra</option>
+                                    <option>Angola</option>
+                                    <option>Anguilla</option>
+                                    <option>Antarctica</option>
+                                    <option>Antigua and Barbuda</option>
+                                    <option>Argentina</option>
+                                    <option>Armenia</option>
+                                    <option>Aruba</option>
+                                    <option>Australia</option>
+                                    <option>Austria</option>
+                                    <option>Azerbaijan</option>
+                                    <option>Bahamas</option>
+                                    <option>Bahrain</option>
+                                    <option>Bangladesh</option>
+                                    <option>Barbados</option>
+                                    <option>Belarus</option>
+                                    <option>Belgium</option>
+                                    <option>Belize</option>
+                                    <option>Benin</option>
+                                    <option>Bermuda</option>
+                                    <option>Bhutan</option>
+                                    <option>Bolivia, Plurinational State of</option>
+                                    <option>Bonaire, Sint Eustatius and Saba</option>
+                                    <option>Bosnia and Herzegovina</option>
+                                    <option>Botswana</option>
+                                    <option>Bouvet Island</option>
+                                    <option>Brazil</option>
+                                    <option>British Indian Ocean Territory</option>
+                                    <option>Brunei Darussalam</option>
+                                    <option>Bulgaria</option>
+                                    <option>Burkina Faso</option>
+                                    <option>Burundi</option>
+                                    <option>Cambodia</option>
+                                    <option>Cameroon</option>
+                                    <option>Canada</option>
+                                    <option>Cape Verde</option>
+                                    <option>Cayman Islands</option>
+                                    <option>Central African Republic</option>
+                                    <option>Chad</option>
+                                    <option>Chile</option>
+                                    <option>China</option>
+                                    <option>Christmas Island</option>
+                                    <option>Cocos (Keeling) Islands</option>
+                                    <option>Colombia</option>
+                                    <option>Comoros</option>
+                                    <option>Congo, the Democratic Republic of the</option>
+                                    <option>Congo</option>
+                                    <option>Cook Islands</option>
+                                    <option>Costa Rica</option>
+                                    <option>Côte d'Ivoire</option>
+                                    <option>Croatia</option>
+                                    <option>Cuba</option>
+                                    <option>Curaçao</option>
+                                    <option>Cyprus</option>
+                                    <option>Czech Republic</option>
+                                    <option>Denmark</option>
+                                    <option>Djibouti</option>
+                                    <option>Dominica</option>
+                                    <option>Dominican Republic</option>
+                                    <option>Ecuador</option>
+                                    <option>Egypt</option>
+                                    <option>El Salvador</option>
+                                    <option>Equatorial Guinea</option>
+                                    <option>Eritrea</option>
+                                    <option>Estonia</option>
+                                    <option>Ethiopia</option>
+                                    <option>Falkland Islands (Malvinas)</option>
+                                    <option>Faroe Islands</option>
+                                    <option>Fiji</option>
+                                    <option>Finland</option>
+                                    <option>France</option>
+                                    <option>French Guiana</option>
+                                    <option>French Polynesia</option>
+                                    <option>French Southern Territories</option>
+                                    <option>Gabon</option>
+                                    <option>Gambia</option>
+                                    <option>Georgia</option>
+                                    <option>Germany</option>
+                                    <option>Ghana</option>
+                                    <option>Gibraltar</option>
+                                    <option>Greece</option>
+                                    <option>Greenland</option>
+                                    <option>Grenada</option>
+                                    <option>Guadeloupe</option>
+                                    <option>Guam</option>
+                                    <option>Guatemala</option>
+                                    <option>Guernsey</option>
+                                    <option>Guinea</option>
+                                    <option>Guinea-Bissau</option>
+                                    <option>Guyana</option>
+                                    <option>Haiti</option>
+                                    <option>Heard Island and McDonald Islands</option>
+                                    <option>Holy See (Vatican City State)</option>
+                                    <option>Honduras</option>
+                                    <option>Hong Kong</option>
+                                    <option>Hungary</option>
+                                    <option>Iceland</option>
+                                    <option>India</option>
+                                    <option>Indonesia</option>
+                                    <option>Iran, Islamic Republic of</option>
+                                    <option>Iraq</option>
+                                    <option>Ireland</option>
+                                    <option>Isle of Man</option>
+                                    <option>Israel</option>
+                                    <option>Italy</option>
+                                    <option>Jamaica</option>
+                                    <option>Japan</option>
+                                    <option>Jersey</option>
+                                    <option>Jordan</option>
+                                    <option>Kazakhstan</option>
+                                    <option>Kenya</option>
+                                    <option>Kiribati</option>
+                                    <option>Korea, Democratic People's Republic of</option>
+                                    <option>Korea, Republic of</option>
+                                    <option>Kuwait</option>
+                                    <option>Kyrgyzstan</option>
+                                    <option>Lao People's Democratic Republic</option>
+                                    <option>Latvia</option>
+                                    <option>Lebanon</option>
+                                    <option>Lesotho</option>
+                                    <option>Liberia</option>
+                                    <option>Libya</option>
+                                    <option>Liechtenstein</option>
+                                    <option>Lithuania</option>
+                                    <option>Luxembourg</option>
+                                    <option>Macao</option>
+                                    <option>Macedonia, the former Yugoslav Republic of</option>
+                                    <option>Madagascar</option>
+                                    <option>Malawi</option>
+                                    <option>Malaysia</option>
+                                    <option>Maldives</option>
+                                    <option>Mali</option>
+                                    <option>Malta</option>
+                                    <option>Marshall Islands</option>
+                                    <option>Martinique</option>
+                                    <option>Mauritania</option>
+                                    <option>Mauritius</option>
+                                    <option>Mayotte</option>
+                                    <option>Mexico</option>
+                                    <option>Micronesia, Federated States of</option>
+                                    <option>Moldova, Republic of</option>
+                                    <option>Monaco</option>
+                                    <option>Mongolia</option>
+                                    <option>Montenegro</option>
+                                    <option>Montserrat</option>
+                                    <option>Morocco</option>
+                                    <option>Mozambique</option>
+                                    <option>Myanmar</option>
+                                    <option>Namibia</option>
+                                    <option>Nauru</option>
+                                    <option>Nepal</option>
+                                    <option>Netherlands</option>
+                                    <option>New Caledonia</option>
+                                    <option>New Zealand</option>
+                                    <option>Nicaragua</option>
+                                    <option>Niger</option>
+                                    <option>Nigeria</option>
+                                    <option>Niue</option>
+                                    <option>Norfolk Island</option>
+                                    <option>Northern Mariana Islands</option>
+                                    <option>Norway</option>
+                                    <option>Oman</option>
+                                    <option>Pakistan</option>
+                                    <option>Palau</option>
+                                    <option>Palestinian Territory, Occupied</option>
+                                    <option>Panama</option>
+                                    <option>Papua New Guinea</option>
+                                    <option>Paraguay</option>
+                                    <option>Peru</option>
+                                    <option>Philippines</option>
+                                    <option>Pitcairn</option>
+                                    <option>Poland</option>
+                                    <option>Portugal</option>
+                                    <option>Puerto Rico</option>
+                                    <option>Qatar</option>
+                                    <option>Réunion</option>
+                                    <option>Romania</option>
+                                    <option>Russian Federation</option>
+                                    <option>Rwanda</option>
+                                    <option>Saint Barthélemy</option>
+                                    <option>Saint Helena, Ascension and Tristan da Cunha</option>
+                                    <option>Saint Kitts and Nevis</option>
+                                    <option>Saint Lucia</option>
+                                    <option>Saint Martin (French part)</option>
+                                    <option>Saint Pierre and Miquelon</option>
+                                    <option>Saint Vincent and the Grenadines</option>
+                                    <option>Samoa</option>
+                                    <option>San Marino</option>
+                                    <option>Sao Tome and Principe</option>
+                                    <option>Saudi Arabia</option>
+                                    <option>Senegal</option>
+                                    <option>Serbia</option>
+                                    <option>Seychelles</option>
+                                    <option>Sierra Leone</option>
+                                    <option>Singapore</option>
+                                    <option>Sint Maarten (Dutch part)</option>
+                                    <option>Slovakia</option>
+                                    <option>Slovenia</option>
+                                    <option>Solomon Islands</option>
+                                    <option>Somalia</option>
+                                    <option>South Africa</option>
+                                    <option>South Georgia and the South Sandwich Islands</option>
+                                    <option>South Sudan</option>
+                                    <option>Spain</option>
+                                    <option>Sri Lanka</option>
+                                    <option>Sudan</option>
+                                    <option>Suriname</option>
+                                    <option>Svalbard and Jan Mayen</option>
+                                    <option>Swaziland</option>
+                                    <option>Sweden</option>
+                                    <option>Switzerland</option>
+                                    <option>Syrian Arab Republic</option>
+                                    <option>Taiwan, Province of China</option>
+                                    <option>Tajikistan</option>
+                                    <option>Tanzania, United Republic of</option>
+                                    <option>Thailand</option>
+                                    <option>Timor-Leste</option>
+                                    <option>Togo</option>
+                                    <option>Tokelau</option>
+                                    <option>Tonga</option>
+                                    <option>Trinidad and Tobago</option>
+                                    <option>Tunisia</option>
+                                    <option>Turkey</option>
+                                    <option>Turkmenistan</option>
+                                    <option>Turks and Caicos Islands</option>
+                                    <option>Tuvalu</option>
+                                    <option>Uganda</option>
+                                    <option>Ukraine</option>
+                                    <option>United Arab Emirates</option>
+                                    <option>United Kingdom</option>
+                                    <option>United States Minor Outlying Islands</option>
+                                    <option>Uruguay</option>
+                                    <option>Uzbekistan</option>
+                                    <option>Vanuatu</option>
+                                    <option>Venezuela, Bolivarian Republic of</option>
+                                    <option>Viet Nam</option>
+                                    <option>Virgin Islands, British</option>
+                                    <option>Virgin Islands, U.S.</option>
+                                    <option>Wallis and Futuna</option>
+                                    <option>Western Sahara</option>
+                                    <option>Yemen</option>
+                                    <option>Zambia</option>
+                                    <option>Zimbabwe</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputState" class="form-label">Business Type:</label>
+                                <select style="height: 50px; border: 1px solid black;" id="inputState"
+                                    class="form-select">
+                                    <option selected>Select</option>
+                                    <option>Advertiser</option>
+                                    <option>Agency</option>
+                                    <option>Natwork</option>
+                                    <option>Partner/Affiliate/Publisher</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputZip" class="form-label">Comments</label>
+                                <input style="height: 50px; border: 1px solid black;" type="text" class="form-control"
+                                    id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input style="border: 1px solid black;" class="form-check-input" type="checkbox"
+                                        id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        I'd like to receive more information about TUNE; I understand and agree to the
+                                        privacy policy.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success">SEND MESSAGE</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="books mt-5 container-fluid" style="background-color:darkcyan;" >
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <img class="footer-magazine-image" style="margin-top: -50px" width="300" height="400"
+                                src="https://www.astronomy.com/wp-content/uploads/sites/2/2023/01/3-Issue-Image@2x.png"
+                                alt="Astronomy Magazine">
+                        </div>
+                        <div class="col-md-6 my-4 mt-5">
+                            <h3 class="footer-magazine-title mt-5" style="font-family:  Kanit, sans-serif;">
+                                Astronomy magazine: 50 years and counting </h3>
+
+                            <p class="footer-magazine-description" style="font-family:  Kanit, sans-serif;">
+                                The world's best-selling astronomy magazine offers you the most exciting, visually
+                                stunning,
+                                and
+                                timely coverage of the heavens above. Each issue includes expert science reporting,
+                                vivid
+                                color
+                                photography, complete sky coverage, spot-on observing tips, informative telescope
+                                reviews,
+                                and much
+                                more! All this in a user-friendly style that's perfect for astronomers at any level.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer style="background-color: black; color: white;">
+        <div class="container">
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                        <h5 style="font-family: Kanit, sans-serif;">Astronomy</h5>
+                        <ul class="nav flex-column" style="color: white;">
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">News</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Space
+                                    Exporation</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">The
+                                    Magzine</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Contact
+                                    Us</a>
+                            </li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 --bs-body-color">Ask Astro</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                    </div>
+
+                    <div class="col-6 col-md-2 mb-3">
+                    </div>
+
+                    <div class="col-md-5 offset-md-1 mb-3">
+                        <form>
+                            <h5 style="font-family: Kanit, sans-serif;">Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-success" type="button"
+                                    style="font-family: Kanit, sans-serif;">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p style="font-family: Kanit, sans-serif;">&copy; 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-x-twitter fs-4"
+                                    style="color: white;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram fs-4"
+                                    style="color: white;"></i></a></li>
+                        <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook fs-4"
+                                    style="color: white;"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </footer>
+</body>
+
+</html>
